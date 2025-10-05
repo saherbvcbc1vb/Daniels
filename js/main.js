@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Navbar scroll
   const navbar = document.querySelector(".bg-nav");
   const homeSection = document.querySelector("#home");
 
@@ -13,28 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", updateNavbar);
   updateNavbar();
-});
-var typed = new Typed(".hero-p", {
-  strings: ["Larry Daniels ", "Developer", "Designer"],
-  typeSpeed: 60,
-  loop: true,
-  loopCount: true,
-  backSpeed: 60,
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll(".card-text1");
 
-  const duration = 3000; 
-  
-  const options = {
-    root: null,
-    threshold: 0.5,
-  };
+  // Typed.js
+  var typed = new Typed(".hero-p", {
+    strings: ["Larry Daniels ", "Developer", "Designer"],
+    typeSpeed: 60,
+    loop: true,
+    loopCount: true,
+    backSpeed: 60,
+  });
+
+  // Counters
+  const counters = document.querySelectorAll(".card-text1");
+  const duration = 3000;
+  const options = { root: null, threshold: 0.5 };
 
   const startCount = (counter) => {
     const target = +counter.getAttribute("data-target");
     let start = 0;
-    const increment = target / (duration / 16); 
+    const increment = target / (duration / 16);
     const update = () => {
       start += increment;
       if (start >= target) {
@@ -44,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(update);
       }
     };
-    
     update();
   };
 
@@ -57,5 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, options);
 
-  observer.observe(document.querySelector(".count"));
+  const countSection = document.querySelector(".count");
+  if (countSection) observer.observe(countSection);
 });
