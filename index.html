@@ -369,7 +369,7 @@
       <!-- ? work -->
       <section class="pt-70 portfolio" id="portfolio">
         <div class="container">
-          <div class="row mb-5">
+          <div class="row mb-4">
             <div class="col-sm-12">
               <div class="serv-text text-center mb-4">
                 <h3 class="title-servers position-relative">Portfolio.</h3>
@@ -379,170 +379,556 @@
           <div class="row pb-3">
             <div class="col-12">
               <ul
-                class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                class="nav nav-tabs justify-content-center"
+                id="myTab"
+                role="tablist"
               >
-                <li class="me-4 fw-bold line">All</li>
-                <li class="me-4 fw-bold">Brand</li>
-                <li class="me-4 fw-bold">Design</li>
-                <li class="me-4 fw-bold">Graphic</li>
+                <li class="nav-item me-4 fw-bold" role="presentation">
+                  <button
+                    class="nav-link active work-btn"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                  >
+                    All
+                  </button>
+                </li>
+                <li class="nav-item me-4 fw-bold" role="presentation">
+                  <button
+                    class="nav-link work-btn"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false"
+                  >
+                    Brand
+                  </button>
+                </li>
+                <li class="nav-item me-4 fw-bold" role="presentation">
+                  <button
+                    class="nav-link work-btn"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contact-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact-tab-pane"
+                    aria-selected="false"
+                  >
+                    Design
+                  </button>
+                </li>
+                <li class="nav-item me-4 fw-bold" role="presentation">
+                  <button
+                    class="nav-link work-btn"
+                    id="disabled-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#disabled-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="disabled-tab-pane"
+                    aria-selected="false"
+                  >
+                    Graphic
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
 
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/1.jpg" alt="#" class="w-100" />
-                </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/1.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/2.jpg" alt="#" class="w-100" />
-                </div>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/2.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/3.jpg" alt="#" class="w-100" />
-                </div>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/3.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/4.jpg" alt="#" class="w-100" />
-                </div>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/4.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/5.jpg" alt="#" class="w-100" />
-                </div>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/5.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div
-                class="card position-relative d-flex justify-content-center align-items-center"
-                style="width: 100%"
-              >
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./img/portfolio/6.jpg" alt="#" class="w-100" />
-                </div>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/6.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
 
-                <div class="layer text-center position-absolute">
-                  <h6 class="portfolio-web">WEB DESIGN</h6>
-                  <ul
-                    class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
-                  >
-                    <li class="me-1">
-                      <a href=""><i class="fa-solid fa-link"></i> </a>
-                    </li>
-                    <li>
-                      <a href=""
-                        ><i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                    </li>
-                  </ul>
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/4.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/6.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="contact-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                  tabindex="0"
+                >
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/2.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/5.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="disabled-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="disabled-tab"
+                  tabindex="0"
+                >
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/1.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/3.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div
+                        class="card position-relative d-flex justify-content-center align-items-center"
+                        style="width: 100%"
+                      >
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <img
+                            src="./img/portfolio/5.jpg"
+                            alt="#"
+                            class="w-100"
+                          />
+                        </div>
+
+                        <div class="layer text-center position-absolute">
+                          <h6 class="portfolio-web">WEB DESIGN</h6>
+                          <ul
+                            class="list-unstyled d-flex justify-content-center align-items-center portfolio-list"
+                          >
+                            <li class="me-1">
+                              <a href=""><i class="fa-solid fa-link"></i> </a>
+                            </li>
+                            <li>
+                              <a href=""
+                                ><i
+                                  class="fa-solid fa-magnifying-glass-plus"
+                                ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
